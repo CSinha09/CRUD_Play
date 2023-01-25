@@ -12,7 +12,7 @@
         </h1>
         @for(note <- notes){
             <h3> @note.id </h3>
-            <a href="#"> @note.title </a>
+            <a href="@routes.NotesController.view(note.id)"> @note.title </a>
             <h3> @note.content </h3>
         }
     </body>

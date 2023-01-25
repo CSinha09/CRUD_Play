@@ -5,7 +5,7 @@
 # An example controller showing a sample home page
 GET     /                           controllers.NotesController.home()
 
-GET     /view/:id                   controllers.NotesController.view(id: Integer)
+GET     /view/:id                   controllers.NotesController.view(id: String)
 
 GET     /notes/create                      controllers.NotesController.create()
 

@@ -23,8 +23,9 @@ public class NotesController extends Controller {
     }
 
     // To GET a specific note
-    public Result view(Integer id){
-        return TODO();
+    public Result view(String id){
+        Note note = Note.findById(id);
+        return ok(views.html.notes.show.render(note));
     }
 
     // To create a note
