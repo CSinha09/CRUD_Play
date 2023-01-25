@@ -1,0 +1,21 @@
+@(noteForm : play.data.Form[Note])
+@import helper._
+
+<html>
+    <head>
+        <title>
+        Edit Note
+        </title>
+    </head>
+    <body>
+        <h1>
+            Edit the note
+        </h1>
+        @helper.form(action = routes.NotesController.update()){
+            @helper.inputText(noteForm("id"))
+            @helper.inputText(noteForm("title"))
+            @helper.inputText(noteForm("content"))
+            <input type="submit" value="Edit">
+            }
+    </body>
+</html>

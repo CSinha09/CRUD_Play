@@ -40,7 +40,7 @@ public class Note {
         for(Note note: notes){
             if(note.id == id) return note;
         }
-        return null;
+        return new Note("10", "Test", "Test done");
     }
 
     public static void addNewNote(Note note){

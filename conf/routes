@@ -11,7 +11,9 @@ GET     /notes/create                      controllers.NotesController.create()
 
 POST    /notes/create                     controllers.NotesController.save()
 
-PATCH   /update/:id                 controllers.NotesController.update(id: String)
+GET     /edit/:id                           controllers.NotesController.edit(id: String)
+
+POST   /update                           controllers.NotesController.update()
 
 DELETE  /remove/:id                 controllers.NotesController.remove(id: String)
 
