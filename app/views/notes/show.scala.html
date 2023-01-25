@@ -10,5 +10,7 @@
         <h3>@note.id</h3>
         <h3>@note.title</h3>
         <h3>@note.content</h3>
+        <a href="@routes.NotesController.edit(note.id)">Edit</a>
+        <a href="@routes.NotesController.remove(note.id)">Remove</a>
     </body>
 </html>

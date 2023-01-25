@@ -58,7 +58,9 @@ public class NotesController extends Controller {
 
     // To delete a specific note
     public Result remove(String id){
-        return TODO();
+        Note note = Note.findById(id);
+        Note.removeNote(note);
+        return redirect(routes.NotesController.home());
     }
 
 }
